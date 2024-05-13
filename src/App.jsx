@@ -4,6 +4,7 @@ import Login from "./Pages/Login";
 import Regiter from "./Pages/Regiter";
 
 import JobDescription from "./Components/home/JobDescription.jsx";
+import MainProfile from "./Components/profile/mainProfile.jsx";
 
 // const Nav = styled.div`
 //   display: flex;
@@ -24,9 +25,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Regiter />} />
         <Route path="/job-description" element={<JobDescription />} />
+        <Route path="/profile" element={<MainProfile/>} />
       </Routes>
     </div>
   );
 }
 
-export default App;
+export default App; 

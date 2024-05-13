@@ -50,7 +50,7 @@ const Regiter = () => {
         <div class="flex flex-col bg-white text-white w-[50%] rounded h-[500px]">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
-              Create and account
+              Create an account
             </h1>
             <form className="space-y-4 md:space-y-6" action="#">
               <div>
