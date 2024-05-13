@@ -154,7 +154,7 @@ const Login = () => {
                   Sign in
                 </button>
               </div>
-              <p className="mt-10 text-center text-sm text-gray-500">
+              <p className="mb-5 mt-10 text-center text-sm text-gray-500">
                 Not a member?
                 <Link to="/register">Sign Up</Link>
               </p>

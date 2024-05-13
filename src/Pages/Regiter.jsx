@@ -1,12 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faGooglePlusG,
-  faInstagram,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faFacebook,
+//   faGooglePlusG,
+//   faInstagram,
+//   faLinkedin,
+//   faTwitter,
+// } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // const Card = styled.div`
@@ -48,8 +49,8 @@ const Regiter = () => {
       <Container>
         <div class="flex flex-col bg-white text-white w-[50%] rounded h-[500px]">
           <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
-              Create and account
+            <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
+              Create an account
             </h1>
             <form className="space-y-4 md:space-y-6" action="#">
               <div>
@@ -126,19 +127,14 @@ const Regiter = () => {
                 </div>
               </div>
               <button
-                  type="submit"
-                  className="mt-5 flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  Create an account
-                </button>
-              <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                type="submit"
+                className="mt-5 flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Create an account
+              </button>
+              <p className="mb-5 text-sm font-light text-gray-500 dark:text-gray-400">
                 Already have an account?{" "}
-                <a
-                  href="#"
-                  className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                >
-                  Login here
-                </a>
+                <Link to="/login">Login here</Link>
               </p>
             </form>
           </div>

@@ -1,16 +1,16 @@
 import React from "react";
-import w from "./w.png";
+// import w from "./w.png";
 const Skills = () => {
   return (
     <div className="">
       <div className="mb-5 flex justify-center">
-        <img src={w} alt="img" className="rounded-full w-[50%] h-[50%]" />
+        <img src="https://avatars.githubusercontent.com/u/31133452?s…00&u=c59c0056e5087e14c772b3b9209101e23a274d82&v=4" alt="img" className="rounded-full w-[50%] h-[50%]" />
       </div>
       <div className="mb-5 flex justify-center items-center flex-col">
         <h1
           style={{ fontSize: 20, fontFamily: "sans-serif", color: "#0077B5" }}
         >
-          Wassim Ben Hssin
+          Jdidi Nadhem
         </h1>
         <span style={{ color: "gray" }}>Devoleper</span>
         <p style={{ color: "#545454" }}>

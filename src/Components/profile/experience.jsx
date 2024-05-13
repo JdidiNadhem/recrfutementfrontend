@@ -3,51 +3,49 @@ import React from "react";
 const Experience = () => {
   return (
     <div>
-      <h1>Basic Information</h1>
-      <div className="flex gap-5 p-8 justify-between p-9">
+      <h1>Basic Informations</h1>
+      <div className="flex gap-5 p-8 p-9">
         <div className="flex flex-col">
-          <span>AGE</span>
+          <span>Birth day: </span>
           <span style={{ fontFamily: "sans-serif", color: "blue" }}>
-            28 YEAR
+            13/06/1997
           </span>
-          <span>AGE</span>
+          <span>Email: </span>
           <span style={{ fontFamily: "sans-serif", color: "blue" }}>
-            28 YEAR
+            jedidinadhem@gmail.com
           </span>
-          <span>AGE</span>
+          <span>Phone: </span>
           <span style={{ fontFamily: "sans-serif", color: "blue" }}>
-            28 YEAR
+            +216 53 310 408
           </span>
         </div>
         <div className="flex flex-col">
-          <span>AGE</span>
+          <span>LinkedIn: </span>
+          <span style={{ fontFamily: "sans-serif", color: "blue" }}>
+            https://fr.linkedin.com/nadhem-jdidi
+          </span>
+          <span>Github: </span>
+          <span style={{ fontFamily: "sans-serif", color: "blue" }}>
+            https://github.com/JdidiNadhem
+          </span>
+          {/* <span>AGE</span>
           <span style={{ fontFamily: "sans-serif", color: "blue" }}>
             28 YEAR
-          </span>
-          <span>AGE</span>
-          <span style={{ fontFamily: "sans-serif", color: "blue" }}>
-            {" "}
-            28 YEAR
-          </span>
-          <span>AGE</span>
-          <span style={{ fontFamily: "sans-serif", color: "blue" }}>
-            28 YEAR
-          </span>
+          </span> */}
         </div>
-        <div className="flex flex-col">
-          {" "}
+        {/* <div className="flex flex-col">
           <span>AGE</span>
           <span>28 YEAR</span>
           <span>AGE</span>
           <span>28 YEAR</span>
           <span>AGE</span>
           <span>28 YEAR</span>
-        </div>
+        </div> */}
       </div>
-      <button className="mr-5 bg-gradient-to-r from-blue-500 to-green-500 hover:from-green-500 hover:to-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md">
+      <button className="mr-5 bg-[#D2D2D2] py-2 px-4 rounded-lg shadow-md">
         Download Resume
       </button>
-      <button className="bg-gradient-to-r from-blue-500 to-green-500 hover:from-green-500 hover:to-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md">
+      <button className="mr-5 bg-[#D2D2D2] py-2 px-4 rounded-lg shadow-md">
         Send Email
       </button>
     </div>

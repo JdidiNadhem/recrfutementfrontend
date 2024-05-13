@@ -396,9 +396,9 @@ const Main = () => {
     }
   };
 
-  function formatSalary(salary) {
-    return salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
+  // function formatSalary(salary) {
+  //   return salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  // }
 
   return (
     <div className="flex-column justify-center">
