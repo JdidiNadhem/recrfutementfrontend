@@ -6,6 +6,11 @@ import Regiter from "./Pages/Regiter";
 import JobDescription from "./Components/home/JobDescription.jsx";
 import MainProfile from "./Components/profile/mainProfile.jsx";
 
+import Layout from "./Layout.jsx";
+import Error from "./Pages/Error.jsx";
+import CompanyProfile from "./Components/company/CompanyProfile.jsx";
+import AddJobOffer from "./Components/company/AddJobOffer.jsx";
+
 // const Nav = styled.div`
 //   display: flex;
 // `;
@@ -21,11 +26,16 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="job-description" element={<JobDescription />} />
+          <Route path="profile" element={<MainProfile />} />
+          <Route path="company-profile" element={<CompanyProfile />} />
+          <Route path="/add-offer" element={<AddJobOffer />} />
+        </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Regiter />} />
-        <Route path="/job-description" element={<JobDescription />} />
-        <Route path="/profile" element={<MainProfile/>} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
