@@ -3,7 +3,7 @@ import React from "react";
 const Experience = () => {
   return (
     <div>
-      <h1>Basic Informations</h1>
+      <h2 className='text-2xl'>Basic Informations</h2>
       <div className="flex gap-5 p-8 p-9">
         <div className="flex flex-col">
           <span>Birth day: </span>
@@ -45,9 +45,9 @@ const Experience = () => {
       <button className="mr-5 bg-[#D2D2D2] py-2 px-4 rounded-lg shadow-md">
         Download Resume
       </button>
-      <button className="mr-5 bg-[#D2D2D2] py-2 px-4 rounded-lg shadow-md">
+      {/* <button className="mr-5 bg-[#D2D2D2] py-2 px-4 rounded-lg shadow-md">
         Send Email
-      </button>
+      </button> */}
     </div>
   );
 };

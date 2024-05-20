@@ -9,7 +9,7 @@ const JobCard = ({ company, image, title, description }) => {
         <Link to="job-description">
           <h3 className="text-lg font-semibold">{title}</h3>
         </Link>
-        <p className="text-gray-600">{company}</p>
+        <p className="text-gray-600"><Link to="company-profile">{company}</Link></p>
         <p className="text-sm text-gray-700 mt-2">{description}</p>
       </div>
     </div>

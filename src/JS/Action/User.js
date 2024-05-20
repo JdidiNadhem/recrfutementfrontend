@@ -4,7 +4,7 @@ import { FAIL_USER, LOAD_USER } from "../Constatnts/User";
 export const login_user = (email, password,navigate) => async (dispatch) => {
     try {
 
-        dispatch({type: LOAD_USER_USER})
+        dispatch({type: LOAD_USER})
       const result = await axios.post(
         `${process.env.REACT_APP_BACKEND_URL}admin/login`,
         {

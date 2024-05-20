@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
-  return (
+
+  const [showAvMenu, setShowAvMenu] = useState(false)
+
+  return (  
     <nav className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="px-2 sm:px-6 lg:px-8 w-full">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -57,11 +62,13 @@ const NavBar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt="Your Company"
-              />
+              <Link to="/">
+                <img
+                  className="h-8 w-auto"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                  alt="Your Company"
+                />
+              </Link>
             </div>
             <div className="w-full flex justify-center">
               <div className="w-[50%]">
@@ -70,23 +77,57 @@ const NavBar = () => {
                   placeholder="Search..."
                   className="border border-gray-300 rounded-md py-2 px-4 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
-                <button className="absolute right-0 top-0 mt-2 mr-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 text-gray-400"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a4 4 0 11-8 0 4 4 0 018 0zm4 4l5 5m0 0l-5-5m5 5l-5-5m5 5H5m5-9V3"
-                    />
-                  </svg>
-                </button>
               </div>
+            </div>
+            <div>
+              <img class="h-10 w-10 flex-none rounded-full bg-gray-50 pointer-cursor" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="useravatar" onClick={() => { setShowAvMenu(!showAvMenu) }} />
+              {showAvMenu && <div
+                className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                role="menu"
+                aria-orientation="vertical"
+                aria-labelledby="menu-button"
+                tabIndex={-1}
+              >
+                <div className="py-1" role="none">
+                  {/* Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" */}
+                  <a
+                    href="#"
+                    className="text-gray-700 block px-4 py-2 text-sm"
+                    role="menuitem"
+                    tabIndex={-1}
+                    id="menu-item-0"
+                  >
+                    Account settings
+                  </a>
+                  <a
+                    href="#"
+                    className="text-gray-700 block px-4 py-2 text-sm"
+                    role="menuitem"
+                    tabIndex={-1}
+                    id="menu-item-1"
+                  >
+                    Support
+                  </a>
+                  <a
+                    href="#"
+                    className="text-gray-700 block px-4 py-2 text-sm"
+                    role="menuitem"
+                    tabIndex={-1}
+                    id="menu-item-2"
+                  >
+                    License
+                  </a>
+                    <button
+                      type="submit"
+                      className="text-gray-700 block w-full px-4 py-2 text-left text-sm"
+                      role="menuitem"
+                      tabIndex={-1}
+                      id="menu-item-3"
+                    >
+                      Sign out
+                    </button>
+                </div>
+              </div>}
             </div>
           </div>
           {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
